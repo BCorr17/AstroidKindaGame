@@ -23,6 +23,10 @@ namespace AstroidKindaGame
         {
             graphics = new GraphicsDeviceManager(this);
             Content.RootDirectory = "Content";
+            enum GameStates { TitleScreen, Playing, PlayerDead, GameOver};
+            GameStates gameState = GameStates.TitleScreen;
+            Texture2D titleScreen;
+            Texture2D spriteSheet;
         }
 
         /// <summary>
@@ -48,6 +52,9 @@ namespace AstroidKindaGame
             spriteBatch = new SpriteBatch(GraphicsDevice);
 
             // TODO: use this.Content to load your game content here
+
+    titleScreen = Content.Load<Texture2D>(@"Textures\TitleScreen");
+spriteSheet = Content.Load<Texture2D>(@"Textures\spriteSheet");
         }
 
         /// <summary>
@@ -71,6 +78,18 @@ namespace AstroidKindaGame
                 this.Exit();
 
             // TODO: Add your update logic here
+
+            switch (gameState)
+            {
+                case GameStates.TitleScreen:
+                    break;
+                case GameStates.Playing:
+                    break; 
+                case GameStates.PlayerDead:
+                    break;
+                case GameStates.GameOver:
+                    break;
+            }
 
             base.Update(gameTime);
         }
