@@ -1,0 +1,24 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual C# Express 2010
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AstroidKindaGame", "AstroidKindaGame\AstroidKindaGame\AstroidKindaGame.csproj", "{C4163BFF-FA8B-4E66-9357-B1EF500E12D5}"
+EndProject
+Project("{96E2B04D-8817-42C6-938A-82C39BA4D311}") = "AstroidKindaGameContent", "AstroidKindaGame\AstroidKindaGameContent\AstroidKindaGameContent.contentproj", "{D7109F62-1071-4DC5-9F8B-0BB4B3C2586E}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x86 = Debug|x86
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{C4163BFF-FA8B-4E66-9357-B1EF500E12D5}.Debug|x86.ActiveCfg = Debug|x86
+		{C4163BFF-FA8B-4E66-9357-B1EF500E12D5}.Debug|x86.Build.0 = Debug|x86
+		{C4163BFF-FA8B-4E66-9357-B1EF500E12D5}.Release|x86.ActiveCfg = Release|x86
+		{C4163BFF-FA8B-4E66-9357-B1EF500E12D5}.Release|x86.Build.0 = Release|x86
+		{D7109F62-1071-4DC5-9F8B-0BB4B3C2586E}.Debug|x86.ActiveCfg = Debug|x86
+		{D7109F62-1071-4DC5-9F8B-0BB4B3C2586E}.Release|x86.ActiveCfg = Release|x86
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
