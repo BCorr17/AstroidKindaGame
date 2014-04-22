@@ -9,7 +9,7 @@ using Microsoft.Xna.Framework.Graphics;
 using Microsoft.Xna.Framework.Input;
 using Microsoft.Xna.Framework.Media;
 
-namespace AstroidKindaGame
+namespace WindowsGame1
 {
     /// <summary>
     /// This is the main type for your game
@@ -23,10 +23,6 @@ namespace AstroidKindaGame
         {
             graphics = new GraphicsDeviceManager(this);
             Content.RootDirectory = "Content";
-            enum GameStates { TitleScreen, Playing, PlayerDead, GameOver};
-            GameStates gameState = GameStates.TitleScreen;
-            Texture2D titleScreen;
-            Texture2D spriteSheet;
         }
 
         /// <summary>
@@ -52,9 +48,6 @@ namespace AstroidKindaGame
             spriteBatch = new SpriteBatch(GraphicsDevice);
 
             // TODO: use this.Content to load your game content here
-
-    titleScreen = Content.Load<Texture2D>(@"Textures\TitleScreen");
-spriteSheet = Content.Load<Texture2D>(@"Textures\spriteSheet");
         }
 
         /// <summary>
@@ -79,18 +72,6 @@ spriteSheet = Content.Load<Texture2D>(@"Textures\spriteSheet");
 
             // TODO: Add your update logic here
 
-            switch (gameState)
-            {
-                case GameStates.TitleScreen:
-                    break;
-                case GameStates.Playing:
-                    break; 
-                case GameStates.PlayerDead:
-                    break;
-                case GameStates.GameOver:
-                    break;
-            }
-
             base.Update(gameTime);
         }
 
@@ -108,3 +89,4 @@ spriteSheet = Content.Load<Texture2D>(@"Textures\spriteSheet");
         }
     }
 }
+
